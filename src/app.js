@@ -2,9 +2,9 @@ const express = require("express")
 
 const app = express()
 
-app.get("/user/:userId/:name/:password",(req,res)=>{
-    console.log(req.params)
-    res.send({firstname:"yaswanth",lastname:"krishna"})
+app.get("/user",(req,res)=>{
+    console.log("handling the route user")
+    res.send("Route handler 1")
 })
 
 app.listen(7777,()=>{
